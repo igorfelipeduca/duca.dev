@@ -6,11 +6,11 @@ import Link from "next/link";
 import { DiGithub } from "react-icons/di";
 import StackGrid from "react-stack-grid";
 
-export default function PinterestStackGrid() {
+export default function MobilePinterestGrid() {
   return (
-    <StackGrid columnWidth={500}>
+    <div className="flex flex-col px-16 space-y-8 justify-center items-center">
       <Link href={"https://thelandlending.com"} key="key1">
-        <div className="w-[30rem] h-[30rem] bg-gray-300 shadow-2xl">
+        <div className="w-[20rem] h-[20rem] bg-gray-300 shadow-2xl">
           <div className="relative w-full h-full">
             <div className="absolute inset-0 overflow-hidden">
               <Image
@@ -30,7 +30,7 @@ export default function PinterestStackGrid() {
         </div>
       </Link>
       <Link href={"https://lotsmojo.com"} key="key2">
-        <div className="w-[30rem] h-[30rem] bg-gray-300 shadow-2xl">
+        <div className="w-[20rem] h-[20rem] bg-gray-300 shadow-2xl">
           <div className="relative w-full h-full">
             <div className="absolute inset-0 overflow-hidden">
               <Image
@@ -50,7 +50,7 @@ export default function PinterestStackGrid() {
         </div>
       </Link>
       <Link href={"https://github.com/igorfelipeduca/ruby-nasa-api"} key="key3">
-        <div className="w-[30rem] h-[30rem] shadow-2xl bg-zinc-800">
+        <div className="w-[20rem] h-[20rem] shadow-2xl bg-zinc-800">
           <div className="relative w-full h-full">
             <div className="flex justify-center h-full items-center">
               <DiGithub className="h-64 w-64 text-white" />
@@ -65,6 +65,6 @@ export default function PinterestStackGrid() {
           </div>
         </div>
       </Link>
-    </StackGrid>
+    </div>
   );
 }
