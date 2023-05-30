@@ -16,7 +16,7 @@ export default function MobilePinterestGrid() {
               <Image
                 src="https://i.ibb.co/dWv6n35/Screenshot-from-2023-05-26-12-16-46-Cropped.png"
                 alt="Imagem"
-                className="w-full h-full"
+                className="w-full h-full rounded-lg"
                 height={900}
                 width={900}
               />
