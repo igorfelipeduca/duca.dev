@@ -60,7 +60,7 @@ export default function Home() {
             <Image
               alt="Igor F. Duca"
               src={
-                "https://i.ibb.co/3cfG1Vh/Whats-App-Image-2023-05-24-at-18-39-54.jpg"
+                "https://i.ibb.co/TYyHt53/1685869311940.jpg"
               }
               height={300}
               width={300}
