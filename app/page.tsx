@@ -19,11 +19,13 @@ export default function Home() {
       <main className="py-16 hidden md:block">
         <div className="px-32 flex justify-between py-8 pb-16">
           <div className="flex flex-col">
-            <h1 className={`text-6xl font-bold ${poppins.className}`}>
-              Igor F<span className="text-rose-500">.</span> Duca
+            <h1
+              className={`text-6xl font-bold text-rose-500 ${poppins.className}`}
+            >
+              Igor F. Duca
             </h1>
 
-            <span className="text-zinc-700 font-bold text-2xl">
+            <span className="text-zinc-700 mt-1 font-bold text-2xl">
               Software Engineer
             </span>
           </div>
@@ -59,9 +61,7 @@ export default function Home() {
           <div className="p-1 border-2 rounded-full border-rose-500 flex items-center justify-center">
             <Image
               alt="Igor F. Duca"
-              src={
-                "https://i.ibb.co/TYyHt53/1685869311940.jpg"
-              }
+              src={"https://i.ibb.co/TYyHt53/1685869311940.jpg"}
               height={300}
               width={300}
               className="rounded-full"
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="font-bold text-3xl">About me</h1>
+            <h1 className="font-bold text-3xl text-rose-500">About me</h1>
 
             <div className="mt-8 w-[32rem] text-zinc-700 flex flex-col space-y-4">
               <p>
