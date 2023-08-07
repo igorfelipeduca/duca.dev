@@ -22,13 +22,13 @@ export default function VsCodeHeader() {
         <div className="h-3 w-3 p-1 rounded-full bg-green-500" />
       </div>
 
-      <div className="flex gap-x-2">
-        <div className="flex items-center gap-x-3">
+      <div className="flex gap-x-4">
+        <div className="flex items-center gap-x-2">
           <BsArrowLeft className="h-5 w-6 text-zinc-400" />
           <BsArrowRight className="h-5 w-6 text-zinc-600" />
         </div>
 
-        <div className="bg-gray-900 border border-zinc-700 rounded-lg py-1 flex justify-center items-center w-[30rem]">
+        <div className="bg-gray-900/50 border border-zinc-700 rounded-lg py-1 flex justify-center items-center w-[30rem]">
           <PiMagnifyingGlassLight className="h-6 w-auto text-zinc-500" />
           <h3 className={`text-zinc-500 text-md ml-2 ${sfRegular.className}`}>
             duca-portfolio
