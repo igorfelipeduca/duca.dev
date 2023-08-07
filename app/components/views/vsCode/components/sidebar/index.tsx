@@ -12,7 +12,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 export default function VsCodeSidebar() {
   return (
     <div className="h-full w-16 flex flex-col justify-between">
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-4 h-full">
         <div className="flex items-center">
           <div className="h-14 bg-zinc-400 w-[0.1rem] mr-3" />
           <BsFiles className={"h-8 w-8 text-zinc-500"} />
@@ -38,7 +38,7 @@ export default function VsCodeSidebar() {
         <FiFigma className={"h-9 w-9 text-zinc-500 ml-4 mt-3"} />
       </div>
 
-      <div className="flex flex-col gap-y-6 mt-[9rem] pb-4">
+      <div className="flex flex-col gap-y-6 pb-4 h-full mt-8">
         <PiUser className={"h-9 w-9 text-zinc-500 ml-4"} />
         <IoSettingsOutline className={"h-9 w-9 text-zinc-500 ml-4"} />
       </div>

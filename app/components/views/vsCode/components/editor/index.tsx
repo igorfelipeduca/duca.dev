@@ -37,6 +37,17 @@ export default function VsCodeEditor() {
             <span className="text-yellow-500">Add more pages</span>
           </div>
         </div>
+
+        <div className="flex items-center gap-x-4 w-full px-8">
+          <span className="text-lg font-medium text-gray-600">4</span>
+
+          <div className={`flex items-center gap-x-2 text-lg`}>
+            <span className="text-green-500">##</span>
+            <span className="bg-gray-400 text-black rounded-lg px-1">TODO</span>
+            <span className="text-yellow-500 -ml-2">:</span>
+            <span className="text-yellow-500">Add more dock apps</span>
+          </div>
+        </div>
       </div>
     </div>
   );

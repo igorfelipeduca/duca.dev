@@ -7,10 +7,10 @@ import VsCodeSidebar from "./components/sidebar";
 
 export default function VsCode() {
   return (
-    <div className="rounded-lg bg-gray-950 h-full w-full">
+    <div className="rounded-lg bg-gray-950 h-auto">
       <VsCodeHeader />
 
-      <div className="flex flex-col">
+      <div className="flex flex-col h-full">
         <div className="flex">
           <VsCodeSidebar />
           <VsCodeExplorer />
