@@ -1,5 +1,5 @@
 export interface CollapseTopbarItemProps {
-  weight?: "regular" | "bold" | "thin";
+  weight?: "regular" | "bold" | "light";
   className?: string;
   text: string;
   items: CollapseItem[];
