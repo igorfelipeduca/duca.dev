@@ -7,6 +7,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "../popover";
 import { Command, CommandEmpty, CommandGroup, CommandItem } from "../command";
 import { cn } from "@/app/lib/utils";
 import { CollapseTopbarItemProps } from "./collapseTopbarItem";
+import { SfThin } from "@/app/lib/fonts";
 
 const sfRegular = localFont({
   src: "../../../assets/fonts/sf-pro/SF-Pro-Display/sf-pro-display_regular.woff2",
@@ -14,6 +15,10 @@ const sfRegular = localFont({
 
 const sfBold = localFont({
   src: "../../../assets/fonts/sf-pro/SF-Pro-Display/sf-pro-display_bold.woff2",
+});
+
+const sfLight = localFont({
+  src: "../../../assets/fonts/sf-pro/SF-Pro-Display/sf-pro-display_light.woff2",
 });
 
 export default function CollapseTopbarItem({
@@ -29,6 +34,9 @@ export default function CollapseTopbarItem({
     switch (weight) {
       case "bold":
         return sfBold;
+
+      case "light":
+        return sfLight;
 
       default:
         return sfRegular;
