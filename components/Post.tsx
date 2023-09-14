@@ -35,7 +35,7 @@ export default function Post({
   return (
     <a
       href={url}
-      className="h-96 w-96 rounded-lg bg-black shadow-lg flex flex-col relative"
+      className="h-72 w-80 lg:h-96 lg:w-96 rounded-lg bg-black shadow-lg flex flex-col relative"
     >
       <div className="relative">
         <Image
