@@ -10,7 +10,7 @@ interface WebsiteListProps {
 export default function WebsiteList({ websites }: WebsiteListProps) {
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col lg:grid lg:grid-cols-4 gap-y-8 w-full">
+      <div className="flex flex-col justify-center lg:justify-normal lg:grid lg:grid-cols-3 gap-y-8 w-full">
         {websites.map((website, index) => (
           <Website
             key={index}
