@@ -31,7 +31,7 @@ export default function Website({ title, url, cover_image, stack }: IWebsite) {
 
       <div className="absolute inset-0 flex flex-col justify-end px-4">
         <div className="pb-8">
-          <h1 className="text-white text-3xl w-[22rem] font-bold">{title}</h1>
+          <h1 className="text-white text-3xl w-[20rem] font-bold">{title}</h1>
 
           <div className="mt-4">
             <span className="text-md text-zinc-400">{stack}</span>

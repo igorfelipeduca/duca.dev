@@ -50,7 +50,7 @@ export default function Post({
 
       <div className="absolute inset-0 flex flex-col justify-end px-4">
         <div className="pt-64">
-          <h1 className="text-white text-lg w-[22rem] font-bold">{title}</h1>
+          <h1 className="text-white text-lg w-[20rem] font-bold">{title}</h1>
         </div>
 
         <div className="mt-auto flex items-center gap-x-2 pb-10 pt-4">
