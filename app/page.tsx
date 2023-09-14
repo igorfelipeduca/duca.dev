@@ -6,6 +6,7 @@ import PostList from "@/components/PostList";
 import { IWebsite } from "@/components/Website";
 import WebsiteList from "@/components/WebsiteList";
 import { useEffect, useState } from "react";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   const [devToPosts, setDevToPosts] = useState<Post[]>([]);
@@ -61,6 +62,33 @@ export default function Home() {
 
   return (
     <main className="px-4 lg:px-32 pb-16 cursor-normal">
+      <NextSeo
+        title="Duca - Software Engineer"
+        description="Software Engineer and passionate for UI/UX - I try to build some cool stuff"
+        canonical="https://duca.dev"
+        openGraph={{
+          url: "https://duca.dev",
+          title: "Duca - Software Engineer",
+          description:
+            "Software Engineer and passionate for UI/UX - I try to build some cool stuff",
+          images: [
+            {
+              url: "https://cdn.dribbble.com/userupload/10051445/file/original-a36442b5f72f0952f312cd77c450fe4c.png?resize=1024x576",
+              width: 1024,
+              height: 576,
+              alt: "Duca - Software Engineer",
+              type: "image/png",
+            },
+          ],
+          siteName: "Duca.dev",
+        }}
+        twitter={{
+          handle: "@sigcoding",
+          site: "https://duca.dev",
+          cardType: "summary_large_image",
+        }}
+      />
+
       <HighlightContent />
 
       <section id="articles" className="mt-16">
