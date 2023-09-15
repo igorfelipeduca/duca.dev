@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export interface IWebsite {
   title: string;
@@ -13,6 +16,8 @@ export interface User {
 }
 
 export default function Website({ title, url, cover_image, stack }: IWebsite) {
+  const [imageSize, setImageSize] = useState<number>(64);
+
   return (
     <a
       href={url}
@@ -22,7 +27,7 @@ export default function Website({ title, url, cover_image, stack }: IWebsite) {
         <Image
           src={cover_image}
           alt={title}
-          className="h-64 object-cover rounded-lg"
+          className={`h-${imageSize} object-cover rounded-lg transition-all duration-150 ease-linear`}
           width={1000}
           height={1000}
         />
