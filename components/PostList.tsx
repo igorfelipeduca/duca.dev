@@ -9,7 +9,7 @@ interface PostListProps {
 export default function PostList({ posts }: PostListProps) {
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col lg:grid lg:grid-cols-3 gap-y-8 w-full">
+      <div className="flex flex-col lg:grid lg:grid-cols-3 gap-y-8 w-full lg:gap-x-10">
         {posts.map((post, index) => (
           <Post
             key={index}
