@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import { BiLogoDevTo } from "react-icons/bi";
 import { BsDribbble } from "react-icons/bs";
 
@@ -24,6 +27,8 @@ export default function Post({
   description,
   posted_on,
 }: Post) {
+  const [imageSize, setImageSize] = useState<number>(64);
+
   const PostedOnLogo = () => {
     if (posted_on === "dribbble") {
       return <BsDribbble className="h-5 w-5 text-zinc-200 ml-1" />;
@@ -35,13 +40,15 @@ export default function Post({
   return (
     <a
       href={url}
-      className="h-72 w-[22rem] lg:h-96 lg:w-96 rounded-lg bg-black shadow-lg flex flex-col relative"
+      className="h-72 w-[22rem] lg:h-96 lg:w-[32rem] rounded-lg bg-black shadow-lg flex flex-col relative "
+      onMouseEnter={() => setImageSize(72)}
+      onMouseLeave={() => setImageSize(64)}
     >
       <div className="relative">
         <Image
           src={cover_image}
           alt={title}
-          className="h-64 object-cover rounded-lg"
+          className={`h-${imageSize} object-cover rounded-lg transition-all duration-150 ease-linear`}
           width={1000}
           height={1000}
         />
@@ -53,7 +60,7 @@ export default function Post({
           <h1 className="text-white text-lg w-[20rem] font-bold">{title}</h1>
         </div>
 
-        <div className="mt-auto flex items-center gap-x-2 pb-10 pt-4">
+        <div className="mt-auto flex items-center gap-x-2 pb-4 pt-4">
           <Image
             alt={user.name}
             src={user.profile_image}

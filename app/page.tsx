@@ -61,7 +61,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="px-4 lg:px-32 pb-16 cursor-normal">
+    <main className="px-4 lg:px-32 pb-16 cursor-normal animate-page-loaded">
       <NextSeo
         title="Duca - Software Engineer"
         description="Software Engineer and passionate for UI/UX - I try to build some cool stuff"
@@ -89,7 +89,12 @@ export default function Home() {
         }}
       />
 
-      <HighlightContent />
+      <HighlightContent
+        image="https://cdn.dribbble.com/userupload/10051445/file/original-a36442b5f72f0952f312cd77c450fe4c.png?resize=1024x576"
+        title="Some superficial dive into branding"
+        description="A little about how I managed to unite and merge the ideas and references to cook this website 🧑‍🍳"
+        url="https://dribbble.com/shots/22553498-Some-superficial-dive-into-branding"
+      />
 
       <section id="articles" className="mt-16">
         <h1 className="text-4xl text-black font-bold mb-8">
