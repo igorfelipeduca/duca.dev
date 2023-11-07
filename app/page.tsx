@@ -7,6 +7,7 @@ import { IWebsite } from "@/components/Website";
 import WebsiteList from "@/components/WebsiteList";
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
+import { BiCoffee } from "react-icons/bi";
 
 export default function Home() {
   const [devToPosts, setDevToPosts] = useState<Post[]>([]);
@@ -88,6 +89,18 @@ export default function Home() {
           cardType: "summary_large_image",
         }}
       />
+
+      <div className="flex justify-end pb-4">
+        <a
+          href="https://pixmeacoffee.vercel.app/ducaswtf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-lg bg-black text-white border flex items-center gap-x-2 transition-all duration-150 ease-linear hover:bg-zinc-800"
+        >
+          <BiCoffee className={"h-5 w-5"} />
+          Pix me a coffee
+        </a>
+      </div>
 
       <HighlightContent
         image="https://cdn.dribbble.com/userupload/10051445/file/original-a36442b5f72f0952f312cd77c450fe4c.png?resize=1024x576"

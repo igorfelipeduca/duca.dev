@@ -27,8 +27,6 @@ export default function Post({
   description,
   posted_on,
 }: Post) {
-  const [imageSize, setImageSize] = useState<number>(64);
-
   const PostedOnLogo = () => {
     if (posted_on === "dribbble") {
       return <BsDribbble className="h-5 w-5 text-zinc-200 ml-1" />;
@@ -40,15 +38,13 @@ export default function Post({
   return (
     <a
       href={url}
-      className="h-72 w-[22rem] lg:h-96 lg:w-[32rem] rounded-lg bg-black shadow-lg flex flex-col relative "
-      onMouseEnter={() => setImageSize(72)}
-      onMouseLeave={() => setImageSize(64)}
+      className="h-72 w-[22rem] lg:h-96 lg:w-[32rem] rounded-lg bg-black shadow-lg flex flex-col relative hover:scale-105 transition-all duration-150 ease-linear"
     >
       <div className="relative">
         <Image
           src={cover_image}
           alt={title}
-          className={`h-${imageSize} object-cover rounded-lg transition-all duration-150 ease-linear`}
+          className={`h-64 hover:scale-105 object-cover rounded-lg transition-all duration-150 ease-linear`}
           width={1000}
           height={1000}
         />
