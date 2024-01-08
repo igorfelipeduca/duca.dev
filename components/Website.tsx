@@ -21,7 +21,7 @@ export default function Website({ title, url, cover_image, stack }: IWebsite) {
   return (
     <a
       href={url}
-      className="h-72 w-[24rem] lg:h-96 lg:w-[27rem] rounded-lg bg-black shadow-lg flex flex-col relative"
+      className="h-72 w-[22rem] lg:h-96 lg:w-[27rem] rounded-lg bg-black shadow-lg flex flex-col relative"
     >
       <div className="relative">
         <Image
