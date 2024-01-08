@@ -38,13 +38,13 @@ export default function Post({
   return (
     <a
       href={url}
-      className="h-72 w-[22rem] lg:h-96 lg:w-[32rem] rounded-lg bg-black shadow-lg flex flex-col relative hover:scale-105 transition-all duration-150 ease-linear"
+      className="group h-72 w-[22rem] lg:h-96 lg:w-[28rem] rounded-lg bg-black shadow-lg flex flex-col relative transition-all duration-150 ease-linear"
     >
       <div className="relative">
         <Image
           src={cover_image}
           alt={title}
-          className={`h-64 hover:scale-105 object-cover rounded-lg transition-all duration-150 ease-linear`}
+          className={`h-64 group-hover:grayscale-0 grayscale object-cover rounded-lg transition-all duration-150 ease-linear`}
           width={1000}
           height={1000}
         />

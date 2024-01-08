@@ -9,7 +9,7 @@ import { social } from "@/app/utils/social";
 export default function Header() {
   return (
     <>
-      <div className="flex flex-col lg:hidden px-4 w-full lg:px-32 py-16">
+      <div className="flex flex-col lg:hidden px-4 w-full lg:px-16 py-16">
         <div className="flex justify-start items-center">
           <Image
             src={Duca}
