@@ -110,10 +110,10 @@ export default function Home() {
       </div>
 
       <HighlightContent
-        image="https://cdn.dribbble.com/userupload/10051445/file/original-a36442b5f72f0952f312cd77c450fe4c.png?resize=1024x576"
-        title="Some superficial dive into branding"
-        description="A little about how I managed to unite and merge the ideas and references to cook this website 🧑‍🍳"
-        url="https://dribbble.com/shots/22553498-Some-superficial-dive-into-branding"
+        image="https://res.cloudinary.com/practicaldev/image/fetch/s--8X6NwbOq--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/617gplvxatos4um539xj.jpg"
+        title="Talking about UI planning"
+        description="The basics of planning a UI is for you to understand why things look and work the way they do."
+        url="https://dev.to/yelldutz/some-food-for-thought-about-planning-interfaces-51fl"
       />
 
       <section id="articles" className="mt-16">

@@ -9,7 +9,7 @@ import { social } from "@/app/utils/social";
 export default function Header() {
   return (
     <>
-      <div className="flex flex-col lg:hidden px-4 w-full lg:px-16 py-16">
+      <div className="flex flex-col lg:hidden px-4 w-full py-16">
         <div className="flex justify-start items-center">
           <Image
             src={Duca}
@@ -46,7 +46,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="hidden lg:flex px-4 w-full lg:px-32 py-16">
+      <div className="hidden lg:flex px-4 w-full lg:px-16 py-16">
         <div className="bg-black rounded-xl w-full text-white py-4 px-10 flex h-40 justify-between">
           <div className="flex justify-center items-center">
             <Image
