@@ -51,6 +51,13 @@ export default function Home() {
         "https://i.ibb.co/fXC4sGW/Screenshot-2023-09-14-at-01-34-21.png",
       stack: "Next.js, TailwindCSS, TypeScript, Vercel",
     },
+    {
+      title: "Duca - Building Blocks",
+      url: "https://duca.mintlify.app",
+      cover_image:
+        "https://i.ibb.co/RbXcJkC/Screenshot-2024-01-07-at-01-08-57.png",
+      stack: "Mintlify",
+    },
   ];
 
   useEffect(() => {
@@ -62,7 +69,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="px-4 lg:px-32 pb-16 cursor-normal animate-page-loaded">
+    <main className="px-4 lg:px-16 pb-16 cursor-normal animate-page-loaded">
       <NextSeo
         title="Duca - Software Engineer"
         description="Software Engineer and passionate for UI/UX - I try to build some cool stuff"
@@ -128,7 +135,7 @@ export default function Home() {
       <section id="websites" className="mt-16">
         <h1 className="text-4xl text-black font-bold mb-8">Websites</h1>
 
-        <WebsiteList websites={websites} />
+        <WebsiteList websites={websites.reverse()} />
       </section>
     </main>
   );
