@@ -38,7 +38,7 @@ export default function Post({
   return (
     <a
       href={url}
-      className="group h-72 w-[22rem] lg:h-96 lg:w-[28rem] rounded-lg bg-black shadow-lg flex flex-col relative transition-all duration-150 ease-linear"
+      className="group h-72 w-[24rem] lg:h-96 lg:w-[26rem] rounded-lg bg-black shadow-lg flex flex-col relative transition-all duration-150 ease-linear"
     >
       <div className="relative">
         <Image
